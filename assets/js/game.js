@@ -137,7 +137,7 @@ const Game = {
 
     appleCollision: function () {
 
-        for (var i = 0; i < snake.length; i++) {
+        for (let i = 0; i < snake.length; i++) {
             if (snake[i].x == apple.x && snake[i].y == apple.y) {
 
                 addNew = true;
@@ -157,7 +157,7 @@ const Game = {
 
     selfCollision: function (head) {
 
-        for (var i = 0; i < snake.length - 1; i++) {
+        for (let i = 0; i < snake.length - 1; i++) {
             if (head.x == snake[i].x && head.y == snake[i].y) {
 
                 game.state.start('Game_Over');
